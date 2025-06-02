@@ -1,72 +1,174 @@
 export const orientations = [
     {
-      title: 'Evitar Cafeína',
-      shortDescription: 'O consumo de cafeína após às 18h pode dificultar o sono. Experimente substituí-la por chás calmantes, como camomila.',
-      description: `<h3>Impacto da Cafeína no Sono</h3>
-      <ul>
-        <li><strong>Dificuldade para Adormecer:</strong> A cafeína é um estimulante que pode aumentar a vigília, dificultando o adormecimento. Consumir cafeína à noite pode atrasar o início do sono, reduzindo o tempo total de descanso.</li>
-        <li><strong>Redução da Qualidade do Sono:</strong> Mesmo se você conseguir adormecer, a cafeína pode diminuir a qualidade do sono. Ela tende a reduzir o sono de ondas lentas (também conhecido como sono profundo), que é essencial para a restauração física e mental.</li>
-        <li><strong>Despertares Noturnos:</strong> Consumir cafeína pode levar a despertares frequentes durante a noite, resultando em um sono fragmentado e menos reparador.</li>
-     </ul>
-     <h3>Efeitos Fisiológicos</h3>
-     <ul>
-        <li><strong>Aumento da Adrenalina:</strong> A cafeína estimula a produção de adrenalina, aumentando os níveis de alerta. Esse efeito pode ser útil durante o dia, mas à noite, ele interfere na capacidade do corpo de relaxar e preparar-se para o sono.</li>
-        <li><strong>Interferência no Ritmo Circadiano:</strong> O consumo de cafeína pode alterar o ritmo circadiano, o relógio interno que regula os ciclos de sono e vigília. Isso pode levar a distúrbios do sono, como insônia e desordens do ritmo circadiano.</li>
-        <li><strong>Efeito Diurético:</strong> A cafeína tem um leve efeito diurético, aumentando a produção de urina. Beber cafeína à noite pode resultar em idas frequentes ao banheiro, interrompendo o sono.</li>
-      </ul>
-      
-      <h3>Consequências a Longo Prazo</h3>
-      <ul>
-        <li><strong>Déficit de Sono:</strong> A ingestão frequente de cafeína à noite pode levar a um déficit de sono crônico, afetando a saúde mental e física. Isso pode resultar em problemas de memória, dificuldade de concentração, e maior risco de acidentes.</li>
-        <li><strong>Aumento do Estresse:</strong> A falta de sono adequado pode aumentar os níveis de cortisol, o hormônio do estresse, levando a uma sensação de cansaço constante e irritabilidade.</li>
-      </ul>`,
-      video: 'https://www.youtube.com/embed/fzYdk1zIpPo?si=5qj7B1w_Vwrw8iK7',
-      finished: 1
-    },
-    {
-      title: 'Horário Fixo para Dormir',
-      shortDescription: 'Manter um horário fixo para dormir e acordar ajuda a regular o ciclo do sono.',
-      description: `<h3>Benefícios de um Horário Fixo para Dormir</h1>
-        <ul> 
-            <li>Manter um horário fixo para dormir traz inúmeros benefícios para a saúde física e mental. Aqui estão alguns dos principais benefícios:</p>
-        </ul>
-        
-        <h3>Melhora da Qualidade do Sono</h2>
-        <ul>
-            <li><strong>Regulação do Ciclo Circadiano:</strong> Um horário fixo ajuda a regular o relógio biológico, promovendo um sono mais profundo e reparador.</li>
-            <li><strong>Redução da Insônia:</strong> A consistência no horário de dormir pode reduzir a incidência de insônia e dificuldades para adormecer.</li>
-        </ul>
-    
-    <h3>Benefícios para a Saúde Física</h2>
-    <ul>
-        <li><strong>Fortalecimento do Sistema Imunológico:</strong> Um sono adequado e consistente ajuda a fortalecer o sistema imunológico, protegendo contra doenças.</li>
-        <li><strong>Manutenção do Peso:</strong> Um bom sono regula os hormônios que controlam o apetite, ajudando na manutenção de um peso saudável.</li>
-        <li><strong>Saúde Cardiovascular:</strong> Dormir bem diminui o risco de doenças cardíacas e hipertensão.</li>
-    </ul>
-    
-    <h3>Benefícios para a Saúde Mental</h2>
-    <ul>
-        <li><strong>Melhora do Humor:</strong> Uma rotina de sono regular pode melhorar o humor e reduzir o risco de depressão e ansiedade.</li>
-        <li><strong>Aumento da Concentração:</strong> O sono de qualidade melhora a função cognitiva, incluindo memória e concentração.</li>
-    </ul>
-    
-    <h3>Desempenho no Dia a Dia</h2>
-    <ul>
-        <li><strong>Aumento da Produtividade:</strong> Com uma boa noite de sono, você estará mais alerta e produtivo durante o dia.</li>
-        <li><strong>Redução do Estresse:</strong> Dormir bem ajuda a reduzir os níveis de estresse e melhora a capacidade de lidar com as demandas diárias.</li>
-    </ul>
-    
-    <p>Estabelecer um horário fixo para dormir é um dos passos mais simples e eficazes para melhorar sua saúde e bem-estar geral.</p>
-`,
-      video: 'https://www.youtube.com/embed/fSt2lndHImQ?si=OmdYyO1Wz0GcEse6',
-      finished: 1
-    },
-    {
-      title: 'Desligar Eletrônicos',
-      shortDescription: 'Desligue aparelhos eletrônicos, como celular e televisão, pelo menos 1 hora antes de dormir para reduzir estímulos.',
-      video: 'https://www.youtube.com/embed/fSt2lndHImQ?si=OmdYyO1Wz0GcEse6',
+      title: 'Imersão ao programa “TCHAU INSÔNIA” ',
+      shortDescription: 'Este aplicativo foi idealizado e estruturado exclusivamente para pessoas que sofrem com a má qualidade do seu sono.',
+      description: `<p>Olá,</p>
+  <p>Este aplicativo foi idealizado e estruturado exclusivamente para pessoas que sofrem com a má qualidade do seu sono, portanto, para indivíduos com insônia e que precisam de ajuda para enfrentá-la.</p>
+  <p>O aplicativo “TCHAU INSÔNIA” não tem a intenção de ser um instrumento para o exercício da prática médica. Ele tem a finalidade única e exclusiva de ser uma ferramenta de ajuda para as pessoas que padecem de insônia.</p>
+  <p>Diante de um problema tão sério é preciso uma abordagem ampla e integral. Tudo o que tem comprovação científica pode e deve ser usado para solucioná-lo.</p>
+  <p>A estratégia que usaremos para a abordagem e tratamento da insônia será holística, ou seja, analisando a patologia desde vários pontos de vista: físico, metabólico, hormonal, mental e ambiental.</p>
+  <p>Sim, analisaremos o problema com uma visão abrangente ou global, mas também faremos a análise minuciosa de cada um dos aspectos envolvidos.</p>
+  <p>Portanto, o método de abordagem e tratamento da insônia aqui proposto pode definir-se como holístico e integrativo.</p>
+  <p>As premissas que norteiam este programa partem da conceituação do problema, sua visão integral holística e sua divisão em partes menores, chegando até um tratamento amplamente integrativo.</p>
+  <p>Sendo assim, este grande e complexo problema de difícil solução será dividido em vários problemas menores, para cada um dos quais teremos a solução apropriada.</p>
+  <p>O ponto de partida é o engajamento e conhecimento do paciente a respeito do seu problema. Quanto mais souber sobre a insônia, melhor será sua adesão ao programa e os resultados certamente mais promissores.</p>
+  <p>Porém, não é preciso que você devore livros e mais livros, ou artigos científicos atrás de atualizações e consensos sobre o assunto, porque nós já fizemos isso por você.</p>
+  <p>Vai aqui nosso primeiro conselho: confie em nosso trabalho, ele é feito com sumo cuidado por você e para você. Aceite integralmente as premissas e conceitos utilizados neste programa, pois tudo o que aqui está exposto tem embasamento científico.</p>
+  <p>Alguns títulos dos subtemas abordados neste programa, à primeira vista, podem parecer técnicos demais, ou difíceis, ou chatos. Calma, fique tranquilo, porque lhe explicaremos utilizando linguagem simples, prática e objetiva. Inclusive, ao final de cada texto colocamos um resumo verdadeiramente sucinto, bem pequenino, para facilitar sua compreensão do assunto.</p>
+  <p>Os vídeos e textos aqui apresentados são muito objetivos, contendo informações essenciais, relevantes e necessárias. Neles vamos diretamente ao ponto, sem rodeios nem informações triviais.</p>
+  <p>Leia ou escute os textos com atenção quantas vezes for preciso, faça isto uma e outra vez, até que tudo esteja perfeitamente entendido.</p>
+  <p>Os assuntos abordados seguem uma ordem sequencial necessária, por isso, lhe aconselhamos acessar um tópico somente quando você tiver estudado o anterior. É hora de colocar em ação o seu empenho e disciplina.</p>
+  <p>É possível que no seu caso existam peculiaridades que o impeçam de seguir à risca todas as nossas orientações, mas lembre-se que não está mais sozinho nesta empreitada. Juntos procuraremos encontrar as soluções mais apropriadas.</p>
+  <p>É verdade que a internet é uma formidável ferramenta para o que nos propomos. Porém, não é menos verdade que esta apresenta algumas limitações, como por exemplo a impossibilidade de realizar um exame físico completo.</p>
+  <p>Por outro lado, dada a natureza do problema que enfrentamos (a insônia), pode ser necessária a realização de exames laboratoriais e outros testes complementares como, por exemplo, a polissonografia ou a actigrafia. Sendo assim, é claro que poderá precisar do apoio de uma equipe médica paralela. Se este for seu caso, também o orientaremos a respeito.</p>
+  <p>Sou o Dr. Mario Rivera, médico de formação alopática em exercício há mais de 39 anos, graduado na Escola de Medicina da Universidade Federal do Pará, especialista em otorrinolaringologia certificado pela Sociedade Brasileira de Otorrinolaringologia, e especialista em Homeopatia pelo Instituto Hahnemanniano do Brasil.</p>
+  <p>Na minha prática médica tenho procurado não ficar restrito apenas a uma visão cartesiana das doenças, estando sempre aberto a outros pontos de vista.</p>
+  <p>Considero que não existe um único método terapêutico todo-poderoso capaz de resolver todos os problemas de saúde.</p>
+  <p>Em alguns casos a alopatia pode ser o melhor recurso. Em outras ocasiões o paciente poderá se beneficiar mais de um tratamento com homeopatia, com fitoterapia, ou talvez com a acupuntura da milenar sabedoria oriental. Ainda, é possível que um tratamento cirúrgico se imponha como a solução ideal.</p>
+  <p>Sendo assim, ao propormos estratégias específicas para o tratamento da sua insônia, incluiremos, quando necessário e sem preconceito algum, os conceitos e experiências da medicina integrativa.</p>
+  <p>Portanto, poderemos recomendar desde a psicoterapia, hipnoterapia, fisioterapia, acupuntura, homeopatia, fitoterapia, aromaterapia, alopatia etc. Lembrando que tudo o que aqui é proposto ou recomendado tem respaldo científico comprovado, seja por estudos diversos, meta-análises ou consensos científicos.</p>
+  <p>Por uma questão de princípios, também por questões legais e de ética médica, neste programa o encorajamos, do princípio ao fim, a manter acompanhamento médico regular, com o seu médico de preferência ou com um especialista em medicina do sono da sua cidade.</p>
+  <p>Aqui não orientaremos absolutamente nada que possa colocar em risco a sua saúde.</p>
+  <p>Quando necessário, poderemos até recomendar alguns tratamentos que podem estar fora do nosso alcance e, nesse caso, o orientaremos e encaminharemos para que isto seja feito da forma correta.</p>
+  <p>Contando com o seu esforço, empenho e determinação, estou convicto de que podemos ajudá-lo a superar sua insônia.</p>
+  <p><strong>Vamos em frente!!!</strong></p>`,
+      audio: '/audio/projeto.mp3',
       finished: 2,
     },
+    {
+      title: 'Internet e Insônia',
+      shortDescription: 'Tratando-se de assuntos de saúde, a procura de orientações na web é válida, ...',
+      description: `    <h1>A internet, possibilidades e limitações<br>na abordagem e tratamento da insônia</h1>
+
+    <p>
+        A internet resulta uma excelente ferramenta para abordar temas como este da insônia, porém tem as suas limitações. 
+        Em alguns casos, a consulta presencial com um médico pode ser indispensável para garantir um diagnóstico preciso e consequentemente um tratamento eficaz.
+    </p>
+
+    <p>
+        Por outro lado, o acesso fácil a informações na internet pode colocar o usuário em contato com informações inverídicas e até prejudiciais.      
+        De fato, ao tentar se auto consultar ou automedicar em sites de busca on-line como Google e outras inteligências artificiais, a pessoa pode obter informações imprecisas, ou interpretá-las erradamente, o que determinará diagnósticos equivocados e prejuízo à saúde. O risco é grande.
+    </p>
+
+    <p>
+        As consultas médicas on-line trazem entre outras vantagens a praticidade, flexibilidade de horário e economia de tempo.  
+        As desvantagens dizem respeito à dependência tecnológica e seus eventuais problemas ou falhas, assim como às limitações para o exame físico, que por vezes pode ser indispensável.
+    </p>
+
+    <p>
+        O diagnóstico da insônia, na maioria dos casos, é eminentemente clínico, e neste contexto a internet é uma formidável ferramenta que pode e deve ser usada.
+    </p>
+
+    <h2>Em resumo:</h2>
+    <p>
+        Tratando-se de assuntos de saúde, a procura de orientações na web é válida, desde que seja feita em aplicativos e sites que tenham o devido respaldo e supervisão de um médico. 
+        As consultas médicas on-line podem ser de grande utilidade, sempre que considerados os prós e contras relativos a cada caso.
+    </p>`,
+      finished: 1,
+      audio: '/audio/internet.wav',
+    },
+    {
+      title: 'O que é a insônia?',
+      shortDescription: 'Insônia é a incapacidade de dormir adequadamente. É o mais comum dos distúrbios do sono e o seu padecimento acarreta graves males para a saúde física ...',
+      description: `<article>
+        <header>
+            <h1>O que é a insônia? <small>(Conhecendo o inimigo)</small></h1>
+        </header>
+
+        <section>
+            <p>O termo insônia deriva do latim <em>im</em> (não) + <em>somnus</em> (sono), significando portanto “falta de sono”.</p>
+            <p>Em termos mais objetivos, podemos dizer que a insônia é a dificuldade recorrente e anormal para adormecer ou permanecer dormindo no período diário desejável. Define-se então como a incapacidade de dormir adequadamente.</p>
+            <p>A insônia é o mais comum dos distúrbios do sono. Outros distúrbios do sono são: apneias do sono; que podem ser obstrutivas, centrais ou mistas, sonolência diurna excessiva, parassonias ou distúrbios comportamentais durante o sono dentre eles; o sonambulismo, a síndrome de pernas inquietas e o bruxismo, narcolepsia e paralisia do sono entre outros.</p>
+            <p>Aqui abordamos especificamente a insônia, seu diagnóstico e tratamento.</p>
+        </section>
+
+        <section>
+            <h2>Implicações da insônia na vida das pessoas e na sociedade</h2>
+            <p>Um indivíduo com insônia tem risco muito alto de desenvolver ou agravar hipertensão arterial sistêmica e doenças metabólicas como diabetes.</p>
+            <p>Insônia causa irritabilidade, depressão, ansiedade, predisposição a distúrbios psiquiátricos e doenças neurodegenerativas, alterações de memória, dificuldade de concentração.</p>
+            <p>Além de afetar drasticamente as atividades do dia seguinte, comprometendo enormemente a produtividade laborativa, aumentando o absentismo no trabalho e afetando a qualidade de vida, a pessoa que padece de insônia também se torna mais suscetível a acidentes, tanto domésticos como no trânsito.</p>
+            <p>Embora a insônia seja uma patologia, ela pode ser considerada também como um sintoma ou como um fator que desencadeia ou agrava outras doenças físicas ou mentais.</p>
+            <p>Sendo assim, a insônia é considerada um grave mal social com altíssimos custos para as famílias, empresas e governo, haja vista que suas consequências se manifestam não só no plano individual, causando grande sofrimento para quem a padece, mas também nas esferas sociais, laborais e educacionais.</p>
+            <p>As estatísticas de prevalência da insônia variam dependendo de variados fatores. Segundo a Associação Brasileira do Sono (A.B.S.), cerca de 73 milhões de brasileiros sofrem de insônia.</p>
+            <p>Para o desenvolvimento da insônia contribuem fatores como predisposição individual (genética), idade; onde a incidência aumenta com a idade, sexo; onde as mulheres são mais vulneráveis, e inclusive a condição socio-econômica.</p>
+        </section>
+
+        <section>
+            <h2>Tipos de insônia</h2>
+            <p>A insônia é uma condição patológica que pode se apresentar com diferentes características, pois na sua gênese incluem-se múltiplos e variados fatores: fatores intrínsecos físicos e mentais de cada indivíduo, o uso de substâncias aditivas, alguns fármacos, maus hábitos de vida e fatores externos ou extrínsecos (ambientais).</p>
+
+            <p>Apenas com a finalidade de oferecer uma visão geral mais ampla desta patologia, listamos a seguir os principais tipos de insônia e sua respectiva característica principal:</p>
+
+            <ul>
+                <li>Aguda</li>
+                <li>Crônica</li>
+                <li>Primária</li>
+                <li>Secundária</li>
+                <li>De conciliação</li>
+                <li>De manutenção</li>
+                <li>De despertar precoce ou terminal</li>
+                <li>Mista</li>
+                <li>Global</li>
+                <li>Comportamental</li>
+                <li>Paradoxal</li>
+                <li>Psicofisiológica</li>
+                <li>Das parassonias</li>
+                <li>Da Apneia-hipopneia Obstrutiva do Sono</li>
+                <li>Por transtorno do ritmo circadiano</li>
+                <li>Por uso de medicamentos ou drogas aditivas</li>
+                <li>Idiopática</li>
+            </ul>
+
+            <h3>Definições principais</h3>
+            <p><strong>Insônia aguda:</strong> Ocorre por curtos períodos e tem evolução menor que 3 meses. Geralmente está relacionada com situações pontuais como estresse ou mudanças significativas no ambiente de dormir.</p>
+
+            <p><strong>Insônia crônica:</strong> Acontece pelo menos 3 vezes por semana e dura por 3 meses ou mais.</p>
+
+            <p><strong>Insônia primária:</strong> Surge sem uma causa subjacente óbvia. Inclui insônia psicofisiológica, idiopática e paradoxal.</p>
+
+            <p><strong>Insônia secundária:</strong> Decorrente de outra doença física, fisiológica ou psicológica.</p>
+
+            <p><strong>Insônia de conciliação:</strong> Dificuldade para iniciar o sono.</p>
+
+            <p><strong>Insônia de manutenção:</strong> Acorda várias vezes durante a noite e tem dificuldade para voltar a dormir.</p>
+
+            <p><strong>Insônia de despertar precoce:</strong> Acorda antes do desejado e não consegue mais dormir.</p>
+
+            <p><strong>Insônia mista:</strong> Combinação de vários tipos de insônia, como conciliação e manutenção.</p>
+
+            <p><strong>Insônia global:</strong> Há comprometimento da qualidade do sono em todas as fases durante toda a noite.</p>
+
+            <p><strong>Insônia comportamental:</strong> Ocorre em pessoas sem horário definido para dormir, especialmente em crianças.</p>
+
+            <p><strong>Insônia paradoxal:</strong> Sensação de não estar dormindo o suficiente, embora esteja.</p>
+
+            <p><strong>Insônia psicofisiológica:</strong> Excesso de preocupação e ansiedade em relação ao sono.</p>
+
+            <p><strong>Insônia das parassonias:</strong> Associada a alterações comportamentais durante o sono, como síndrome das pernas inquietas.</p>
+
+            <p><strong>Insônia da Apneia-hipopneia Obstrutiva do Sono:</strong> Microdespertares causados por pausas respiratórias.</p>
+
+            <p><strong>Insônia por transtorno do ritmo circadiano:</strong> Desregulação do relógio biológico.</p>
+
+            <p><strong>Insônia por uso de medicamentos ou drogas aditivas:</strong> Substâncias como cafeína, álcool e drogas estimulantes interferem no sono.</p>
+
+            <p><strong>Insônia idiopática:</strong> Sem causa aparente, podendo estar relacionada a um sistema do sono subativo ou sistema de despertar hiperativo.</p>
+        </section>
+
+        <section>
+            <h2>Em resumo</h2>
+            <blockquote>
+                <p>Insônia é a incapacidade de dormir adequadamente. É o mais comum dos distúrbios do sono e o seu padecimento acarreta graves males para a saúde física e mental dos indivíduos, assim como prejuízos para a sociedade. Existem vários tipos de insônia, cada um dos quais tem suas respectivas peculiaridades que requerem tratamento diferenciado.</p>
+            </blockquote>
+        </section>
+
+        <footer>
+            <p><strong>“AVANZAR”</strong></p>
+        </footer>
+    </article>`,
+      finished: 1,
+      audio: '/audio/insonia.wav',
+    }
   ];
 
 export const instructions = [

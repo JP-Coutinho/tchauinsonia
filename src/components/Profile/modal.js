@@ -12,7 +12,7 @@ import { Document, Page, pdfjs } from 'react-pdf';
 // Configure o worker do PDF.js
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const Modal = ({ title, description, video, pdf, onClose }) => {
+const Modal = ({ title, description, video, pdf, onClose, audio }) => {
 
   const [numeroPaginas, setNumeroPaginas] = useState(0);
 
@@ -31,6 +31,12 @@ const Modal = ({ title, description, video, pdf, onClose }) => {
               allowFullScreen
               aria-label="Vídeo em destaque"
             />
+          )}
+          {audio && (
+            <audio controls style={{ width: '100%', marginTop: 8 }}>
+              <source src={audio} type="audio/wav" />
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
           )}
           <ModalText dangerouslySetInnerHTML={{ __html: description }} />
 

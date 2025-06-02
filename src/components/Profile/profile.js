@@ -27,6 +27,7 @@ import ModalChat from "./modalchat";
 import { StatusIcon } from './styles';
 
 
+
 export default function Profile() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -88,6 +89,7 @@ export default function Profile() {
         <CardContainer>
           {orientations.map((orientation, index) => (
             <OrientationCard key={index} onClick={() => openModal(orientation)}>
+
               <StatusIcon status={orientation.finished}>
                 {orientation.finished === 1 ? '✔' : orientation.finished === 2 ? '⚠' : '✖'}
               </StatusIcon>
@@ -104,6 +106,7 @@ export default function Profile() {
           title={currentContent.title}
           description={currentContent.description}
           video={currentContent.video}
+          audio={currentContent.audio}
           pdf={currentContent.pdf}
           onClose={closeModal}
         />
