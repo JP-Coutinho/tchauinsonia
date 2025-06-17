@@ -257,7 +257,7 @@ export default function Dashboard({displayName, email}) {
     )}
         </CalendarContainer>
         <GuidelinesCard>
-          <h3 className="font20">Orientações Gerais</h3>
+          <h3 className="font20">Iniciando o programa</h3>
           <GuidelinesList>
             {generalGuidelines.map((guideline, index) => (
               <GuidelineCard key={index} onClick={() => handleGuidelineClick(index)}>

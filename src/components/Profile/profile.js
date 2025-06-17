@@ -85,7 +85,7 @@ export default function Profile() {
 
       {/* Orientações Gerais */}
       <Section>
-        <SectionTitle>Orientações Gerais</SectionTitle>
+        <SectionTitle>Iniciando o programa</SectionTitle>
         <CardContainer>
           {orientations.map((orientation, index) => (
             <OrientationCard key={index} onClick={() => openModal(orientation)}>
@@ -131,7 +131,22 @@ export default function Profile() {
         />
       )}
 
-      {/* Instruções Personalizadas */}
+      <Section>
+        <SectionTitle>Primeira etapa</SectionTitle>
+        <CardContainer>
+        {instructions.map((instruction, index) =>(
+            <OrientationCard  key={index} onClick={() => openModal(instruction)}>
+              <StatusIcon status={instruction.finished}>
+                {instruction.finished === 1 ? '✔' : instruction.finished === 2 ? '⚠' : '✖'}
+              </StatusIcon>
+              <CardTitle>{instruction.title}</CardTitle>
+              <CardText>{instruction.shortDescription}</CardText>
+            </OrientationCard>
+        ))}
+        </CardContainer>
+      </Section>
+
+      {/* Instruções Personalizadas
       <Section>
         <SectionTitle>Instruções Personalizadas</SectionTitle>
         <CardContainer>
@@ -145,9 +160,22 @@ export default function Profile() {
             </OrientationCard>
         ))}
         </CardContainer>
-        </Section>
+        </Section> */}
 
-              {/* Formulários Respondidos */}
+      {/* Formulários a responder */}
+      <Section>
+        <SectionTitle>Diagnóstico da sua insonia</SectionTitle>
+        <CardContainer>
+          {formResponsesMock.map((response, index) => (
+          <OrientationCard key={index} onClick={() => openModalForm(response)}>
+            <CardTitle>{response.title}</CardTitle>
+            <CardText>{response.shortDescription}</CardText>
+          </OrientationCard>
+        ))}
+        </CardContainer>
+      </Section>
+
+      {/* Formulários Respondidos */}
       <Section>
         <SectionTitle>Formulários Respondidos</SectionTitle>
         <CardContainer>
