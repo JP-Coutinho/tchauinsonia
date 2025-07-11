@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { PieChart, Pie, Cell, Tooltip } from "recharts";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip as LineTooltip } from "recharts";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip as LineTooltip, ResponsiveContainer } from "recharts";
 import Calendar from 'react-calendar'; 
 import 'react-calendar/dist/Calendar.css'; 
 import { FaCoffee, FaBed, FaClock, FaSmog } from "react-icons/fa";
@@ -22,6 +22,28 @@ const lineData = Array.from({ length: 30 }, (_, index) => ({
   hours: Math.floor(Math.random() * (8 - 4 + 1)) + 4,
 }));
 
+// Função para calcular idade a partir da data de nascimento no formato dd/mm/yyyy
+function getAgeFromBirthdate(birthdate) {
+  if (!birthdate) return "";
+  const [year, month, day] = birthdate.split("-").map(Number);
+  const birth = new Date(year, month - 1, day);
+  const today = new Date();
+  let age = today.getFullYear() - birth.getFullYear();
+  const m = today.getMonth() - birth.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birth.getDate())) {
+    age--;
+  }
+  return age;
+}
+
+// Exemplo: supondo que sleepProfileFormData está disponível no escopo
+// Recebe a birthdate como prop
+const sleepProfileFormData = JSON.parse(localStorage.getItem("sleepProfileFormData") || "{}");
+const birthDate = sleepProfileFormData?.birthDate || "01/01/2000";
+const age = getAgeFromBirthdate(birthDate);
+console.log("aquii",sleepProfileFormData); // Data de nascimento no formato dd/mm/yyyy
+
+
 var happySleep = lineData.filter(entry => entry.hours >= 7);
 const neutralSleep = lineData.filter(entry => entry.hours >= 6 && entry.hours < 7);
 var wrongSleep = lineData.filter(entry => entry.hours < 6);
@@ -31,7 +53,6 @@ const pieData = [
   { name: "Neutro", value: neutralSleep.length, fill: "#ff9800" },
   { name: "Triste", value: wrongSleep.length, fill: "#f44336" },
 ];
-
 export default function Dashboard({displayName, email}) {
   const [modalOpen, setModalOpen] = useState(false);
   const [sleepTime, setSleepTime] = useState("");
@@ -98,7 +119,7 @@ export default function Dashboard({displayName, email}) {
               <span>Email:</span> {email}
             </Detail>
             <Detail>
-              <span>Idade:</span> 28 anos
+              <span>Idade:</span> {age} anos
             </Detail>
             <Detail>
               <span>Peso:</span> 75 kg
@@ -187,21 +208,15 @@ export default function Dashboard({displayName, email}) {
         </ModalOverlay>
       )}
       <GraphTitle>Horas de Sono nos Últimos 30 Dias</GraphTitle>
-      <LineChart width={900} height={400} data={lineData} style={{ margin: '0 auto' }}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="day" />
-        <YAxis domain={[0, 12]} />
-        <Line 
-          type="monotone" 
-          dataKey="hours" 
-          stroke="#8884d8" 
-          strokeWidth={2} 
-          dot={false} 
-          activeDot={{ r: 8 }} 
-          isAnimationActive={false} 
-        />
-        <LineTooltip />
-      </LineChart>
+      <ResponsiveContainer width="100%" height={300}>
+        <LineChart data={lineData} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
+          <XAxis dataKey="day" hide={window.innerWidth < 600} />
+          <YAxis />
+          <CartesianGrid strokeDasharray="3 3" />
+          <Line type="monotone" dataKey="hours" stroke="#005f73" strokeWidth={2} />
+          <LineTooltip />
+        </LineChart>
+      </ResponsiveContainer>
       <LegendGraph>
         <LegendItemGraph>
           <ColorBox style={{ backgroundColor: '#8884d8' }} />

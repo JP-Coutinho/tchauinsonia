@@ -13,11 +13,18 @@ export default function Login() {
       const result = await signInWithPopup(auth, provider);
       // Pega apenas as propriedades necessárias do usuário
       const { displayName, email, photoURL, uid } = result.user;
-  
-      console.log("Usuário logado com sucesso:", { displayName, email, photoURL });
-  
-      // Redireciona para o dashboard passando apenas os dados serializáveis
-      navigate("/dashboard", { state: { user: { displayName, email, photoURL, uid } } });
+      
+      // Verifica se os dados do usuário estão em cache
+      const cachedUserData = localStorage.getItem('userData');
+      if (!cachedUserData) {
+        // Salva os dados do usuário no localStorage
+        localStorage.setItem('userData', JSON.stringify({ displayName, email, photoURL, uid }));
+        // Se não estiverem, redireciona para /formulario
+        navigate('/formulario', { state: { user: { displayName, email, photoURL, uid } }});
+      } else {
+        // Se estiverem, redireciona para o dashboard normalmente
+        navigate('/dashboard', { state: { user: { displayName, email, photoURL, uid } } });
+      }
     } catch (error) {
       console.error("Erro ao fazer login:", error);
     }

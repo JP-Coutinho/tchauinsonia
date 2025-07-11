@@ -6,7 +6,8 @@ import SleepProfileForm from "../components/Forms/Forms";
 
 export default function FormularyPage() {
   const location = useLocation();
-  const user = location.state?.user; // Aqui, 'user' contém as propriedades serializáveis
+  const user = location.state?.user; 
+  console.log(user);// Aqui, 'user' contém as propriedades serializáveis
     
   // Verifica se o user está disponível antes de acessar as propriedades
   if (!user) {
