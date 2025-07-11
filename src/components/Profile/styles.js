@@ -65,6 +65,7 @@ export const CardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin-top: 70px; // Espaço para o menu superior
 `;
 
 export const InstructionCard = styled.div`
