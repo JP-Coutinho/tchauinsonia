@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 // Sections
 import TopNavbar from "../components/Nav/TopNavbar";
 import Header from "../components/Sections/Header";
@@ -13,7 +13,6 @@ export default function Landing() {
       <TopNavbar />
       <Header />
       <Services />
-      {/* <Projects /> */}
       <Pricing />
       <Contact />
       <Footer />

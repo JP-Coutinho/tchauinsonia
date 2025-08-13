@@ -46,6 +46,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
           <li className="whiteColor" onClick={() => navigate("/perfil",  { state: { user: { displayName: user.displayName, email: user.email, photoURL: user.photoURL, uid: user.uid } } })}>Meu Plano</li>
           <li className="whiteColor" onClick={() => navigate("/dashboard",  { state: { user: { displayName: user.displayName, email: user.email, photoURL: user.photoURL, uid: user.uid } } })}>Dashboard</li>
           <li className="whiteColor" onClick={() => navigate("/detalhes",  { state: { user: { displayName: user.displayName, email: user.email, photoURL: user.photoURL, uid: user.uid } } })}>Meu Perfil</li>
+          <li className="whiteColor" onClick={() => navigate("/sala-bem-estar",  { state: { user: { displayName: user.displayName, email: user.email, photoURL: user.photoURL, uid: user.uid } } })}>Bem Estar</li>
         </UlStyle>
         <UlStyle className="flexSpaceCenter">
             <li className="semiBold font15 pointer">

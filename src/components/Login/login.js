@@ -23,7 +23,7 @@ export default function Login() {
         navigate('/formulario', { state: { user: { displayName, email, photoURL, uid } }});
       } else {
         // Se estiverem, redireciona para o dashboard normalmente
-        navigate('/dashboard', { state: { user: { displayName, email, photoURL, uid } } });
+        navigate('/perfil', { state: { user: { displayName, email, photoURL, uid } } });
       }
     } catch (error) {
       console.error("Erro ao fazer login:", error);

@@ -132,6 +132,7 @@ export default function TopNavbar() {
                       <DropdownItem onClick={() => handleNavigation("/")}>Home</DropdownItem>
                       <DropdownItem onClick={() => handleNavigation("/perfil")}>Meu Plano</DropdownItem>
                       <DropdownItem onClick={() => handleNavigation("/detalhes")}>Meu Perfil</DropdownItem>
+                      <DropdownItem onClick={() => handleNavigation("/sala-bem-estar")}>Bem Estar</DropdownItem>
                     </UserDropdown>
                   )}
                 </li>

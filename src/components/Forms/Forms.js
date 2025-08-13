@@ -22,7 +22,7 @@ const SleepProfileForm = ({ displayName, email }) => {
 
   const handleModalClose = () => {
     setShowModal(false);
-    navigate("/dashboard", { state: { user: { displayName, email } } }); // Redirecionar para o dashboard
+    navigate("/perfil", { state: { user: { displayName, email } } }); // Redirecionar para o dashboard
   };
 
   const [showModal, setShowModal] = useState(false);

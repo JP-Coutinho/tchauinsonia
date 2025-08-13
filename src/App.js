@@ -8,6 +8,7 @@ import DashBoardPage from "./screens/DashBoard.jsx";
 import FormularyPage from "./screens/InitialForms.jsx";
 import ProfilePage from "./screens/Profile.jsx";
 import DetailPage from "./screens/Detail.jsx";
+import WellNessRoomPage from "./screens/WellNessRoomPage.jsx";
 
 export default function App() {
   return (
@@ -19,12 +20,13 @@ export default function App() {
           <link href="https://fonts.googleapis.com/css2?family=Khula:wght@400;600;800&display=swap" rel="stylesheet" />
         </Helmet>
         <Routes>
-          <Route path="/" element={<Landing />} />       {/* Página Inicial */}
+          <Route path="/" element={<ProfilePage />} />       {/* Página Inicial */}
           <Route path="/login" element={<LoginPage />} />   {/* Página de Login */}
           <Route path="/dashboard" element={<DashBoardPage />} />
           <Route path="/formulario" element={<FormularyPage /> } />
           <Route path="/detalhes" element={<DetailPage /> }  />
           <Route path="/perfil" element={<ProfilePage />} />
+          <Route path="/sala-bem-estar" element={<WellNessRoomPage />} />
         </Routes>
       </>
     </Router>
